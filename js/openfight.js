@@ -1,1 +1,3 @@
-var OFAPP = OFAPP || {}
+var OFAPP = OFAPP || {};
+
+OFAPP.file = {readfile:function(){console.log("hello world")}};
