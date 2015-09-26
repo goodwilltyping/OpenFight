@@ -17,35 +17,27 @@
         <h1>OpenFight!!!</h1>
         <div id="col1" class="column">
             <h2>Ready Player 1</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.file.readfile();">Select your character</a>
-            <a href="javescript:void(0)"onclick="OFAPP.file.readpower();">Select your Superpower</a>
-            <a href="javescript:void(0)"onclick="OFAPP.file.readweapon();">Select your weapon</a>
+            <a href="javescript:void(0)"onclick="OFAPP.fighter.get(this);">Select your character</a>
+            <a href="javescript:void(0)"onclick="OFAPP.power.get();">Select your Superpower</a>
+            <a href="javescript:void(0)"onclick="OFAPP.weapon.get();">Select your weapon</a>
 
         </div>
         <div id="col2" class="column">
             <h2>Ready Player 2</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.file.readfile();">Select your character</a>
-            <a href="javescript:void(0)"onclick="OFAPP.file.readpower();">Select your Superpower</a>
-            <a href="javescript:void(0)"onclick="OFAPP.file.readweapon();">Select your Weapon</a>
+            <a href="javescript:void(0)"onclick="OFAPP.fighter.get(this);">Select your character</a>
+            <a href="javescript:void(0)"onclick="OFAPP.power.get();">Select your Superpower</a>
+            <a href="javescript:void(0)"onclick="OFAPP.weapon.get();">Select your Weapon</a>
         </div>
         <div id="footer"></div>
-        <div id="col1-1" class="column">
-           <h2>Player 1 Superpower</h2>
-          <a href="javescript:void(0)"onclick="OFAPP.file.readpower();">Select your Superpower</a>
-          </div>
-          <div id="col2-1" class="column">
-              <h2>Player 2 Superpower</h2>
-              <a href="javescript:void(0)"onclick="OFAPP.file.readpower();">Select your Superpower</a>
-
-
-          </div>
-
     </div>
 
     <!-- Include Modernizr script to assist with browser compatibility -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
     <!-- Custom Javascript scripts loaded -->
+    <script src="js/fighters.json"></script>
+    <script src="js/powers.json"></script>
+    <script src="js/weapons.json"></script>
     <script src="js/OpenFight.js"></script>
 
 </body>

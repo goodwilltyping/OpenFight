@@ -1,0 +1,8 @@
+var OFDATA = OFDATA || {};
+
+OFDATA["FIGHTERS"] = [
+  "Andrew",
+  "Will",
+  "Josh",
+  "Jules"
+];
