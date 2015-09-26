@@ -10,8 +10,4 @@ OFAPP.file = {
   readweapon: function() {
     console.log("bicycle made of swords");
   }
-
-
-
-
 };
