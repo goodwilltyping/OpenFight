@@ -2,11 +2,15 @@ h1 {
   text-align:center;
   font-size: 72px;
   color:crimson;
+  border-color:crimson;
+  border: 10px dashed;
 }
 
 div {
   text-align:center;
 }
+
+
 
 a:link,
 a:active,
@@ -22,14 +26,22 @@ a:visited {
 }
 a:hover {
   color:crimson;
+
   border-color:crimson;
   background-color: pink;
 }
 
 #container {
+
   width:960px;
   margin: auto;
+
 }
+#spacefromhead {
+  width: 900px;
+  height: 50px;
+}
+
 
 #col1,
 #col2 {
@@ -39,3 +51,4 @@ a:hover {
     padding: 10px;
     margin: 2px;
 }
+#foot {clear:both};
