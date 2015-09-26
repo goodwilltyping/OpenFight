@@ -4,7 +4,14 @@ OFAPP.file = {
   readfile: function() {
     console.log("hello world");
   },
-  readfile2: function() {
+  readpower: function() {
     console.log("hello superpower");
+  },
+  readweapon: function() {
+    console.log("bicycle made of swords");
   }
+
+
+
+
 };
