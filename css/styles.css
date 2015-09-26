@@ -1,6 +1,41 @@
 h1 {
   text-align:center;
   font-size: 72px;
-  color:red;
+  color:crimson;
 }
-div {text-align:center}
+
+div {
+  text-align:center;
+}
+
+a:link,
+a:active,
+a:visited {
+  display:block;
+  text-align: center;
+  color: black;
+  width: 200px;
+  margin: auto;
+  padding:20px;
+  border: 1px dashed black;
+  background-color:lightgray;
+}
+a:hover {
+  color:crimson;
+  border-color:crimson;
+  background-color: pink;
+}
+
+#container {
+  width:960px;
+  margin: auto;
+}
+
+#col1,
+#col2 {
+    float: left;
+    width: 450px;
+    border: 2px solid lightgray;
+    padding: 10px;
+    margin: 2px;
+}
