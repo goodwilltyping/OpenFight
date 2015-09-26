@@ -1,3 +1,5 @@
+var OFDATA = OFDATA || {};
+
 OFDATA["POWERS"] = [
   "Driving a car",
   "Glued to screen",
