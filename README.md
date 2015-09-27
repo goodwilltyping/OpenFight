@@ -13,10 +13,10 @@ This is a 3 Player real world game where the card deck is stored digitally. 2 Pl
 
 The 3rd Player will act as the adjudicator. If there are any queries as to the nature of the characters or their attributes, the judge is to be approached for clarification. All interpretations are at the judges discretion and the judges decision is final.
 
-1. Both Player 1 and 2 each have a minute to introduce their characters.
-2. They then each have a minute to make their case for their characters offensive abilities.
-3. Now they each have a minute to make a case for their characters defensive capabilities, taking into account their opponents offensive.
-4. Finally they have 30 seconds each to add final thoughts and convince the judge of their battle superiority.
+1. Both Player 1 and 2 each have a few minutes to introduce their characters.
+2. They then each have a  few minutes to make their case for their characters offensive abilities.
+3. Now they each have time to make a case for their characters defensive capabilities, taking into account their opponents offensive.
+4. Finally, when then judge calls "time" they have 30 seconds each to add final thoughts and convince the judge of their battle superiority.
 
 The judge delivers their final verdict and a winner is chosen.
 
