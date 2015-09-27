@@ -45,10 +45,10 @@ a:hover {
 }
 
 #col3 {
-    width: 960px;
+    width: 450px;
     border: 2px solid green;
     padding: 10px;
-    margin: 2px;
+    margin: auto;
 }
 
 #footer {

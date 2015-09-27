@@ -1,6 +1,6 @@
 var OFDATA = OFDATA || {};
 
-OFDATA["locations"] = [
+OFDATA["LOCATIONS"] = [
   "your house",
   "mount doom",
   "someone else's house"
