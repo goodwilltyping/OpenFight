@@ -12,43 +12,40 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
-<body>
+<body onload="OF_APP.file.readfile();">
     <div id="container">
-        <h1>OpenFight!!!</h1>
-        <div id="col1" class="column">
-            <h2>Ready Player 1</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.fighters.get(this);">Select your character</a>
-            <a href="javescript:void(0)"onclick="OFAPP.powers.get(this);">Select your Superpower</a>
-            <a href="javescript:void(0)"onclick="OFAPP.weapons.get(this);">Select your weapon</a>
+        <!-- HEADER -->
+        <h1><a href="javascript:void(0)" onclick="document.location.reload()">!! Open Fight !!</a></h1>
+        <h3>The real world game where you use your words to fight to the death</h3>
+        <!-- ROW 1 -->
+        <div id="row1" class="row">
+          <div id="col1" class="column">
+              <h2>Ready Player 1</h2>
+              <a id="fighter1" href="javascript:void(0)" onclick="OF_APP.fighters.get(this);" class="select fighter">Select your character</a>
+              <a id="power1" href="javascript:void(0)" onclick="OF_APP.powers.get(this);" class="select power">Select your superpower</a>
+              <a id="weapon1" href="javascript:void(0)" onclick="OF_APP.weapons.get(this);" class="select weapon">Select your weapon</a>
 
+          </div>
+          <div id="col2" class="column">
+              <h2>Ready Player 2</h2>
+              <a id="fighter2" href="javascript:void(0)" onclick="OF_APP.fighters.get(this);" class="select fighter">Select your character</a>
+              <a id="power2" href="javascript:void(0)" onclick="OF_APP.powers.get(this);" class="select power">Select your superpower</a>
+              <a id="weapon2" href="javascript:void(0)" onclick="OF_APP.weapons.get(this);" class="select weapon">Select your weapon</a>
+          </div>
         </div>
-        <div id="col2" class="column">
-            <h2>Ready Player 2</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.fighters.get(this);">Select your character</a>
-            <a href="javescript:void(0)"onclick="OFAPP.powers.get(this);">Select your Superpower</a>
-            <a href="javescript:void(0)"onclick="OFAPP.weapons.get(this);">Select your Weapon</a>
+        <!-- ROW 2 -->
+        <div id="row2" class="row">
+            <h2>[Optional]</h2>
+            <a id="location1" href="javascript:void(0)" onclick="OF_APP.location.get(this);" class="select location">Select your location</a>
         </div>
-        <div id="footer"></div>
-        <div id="col3" class="column">
-            <h2>***optional*** location</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.location.get(this);">Where are you?</a>
-        </div>
-        <!-- <div id="col4" class="column">
-            <h2>this button does nothing!</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.nothing.get(this);">!!!</a>
-        </div> -->
+        <div id="footer"><small><em>This game has been created for educational purposes. <a href="https://github.com/goodwilltyping/OpenFight" target="_blank" class="blackbg">Fork on Github</a></em></small></div>
     </div>
 
     <!-- Include Modernizr script to assist with browser compatibility -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
     <!-- Custom Javascript scripts loaded -->
-    <script src="js/fighters.json"></script>
-    <script src="js/powers.json"></script>
-    <script src="js/weapons.json"></script>
-    <script src="js/locations.json"></script>
-    <script src="js/OpenFight.js"></script>
-    <script src="js/nothing.json"></script>
+    <script src="js/openfight.js"></script>
 
 </body>
 </html>

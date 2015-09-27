@@ -1,9 +1,0 @@
-var OFDATA = OFDATA || {};
-
-OFDATA["WEAPONS"] = [
-  "Bicycle made of Swords",
-  "Ghostbuster's vacuum",
-  "Over-sized Hammer",
-  "Hands hand-cuffed together",
-  "Rocket-powered hoverboard"
-];
