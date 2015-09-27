@@ -44,6 +44,13 @@ a:hover {
     margin: 2px;
 }
 
+#col3 {
+    width: 960px;
+    border: 2px solid green;
+    padding: 10px;
+    margin: 2px;
+}
+
 #footer {
   clear:both;
 }

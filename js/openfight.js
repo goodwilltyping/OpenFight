@@ -7,7 +7,7 @@ OFAPP.file = {
   }
 };
 
-OFAPP.fighter = {
+OFAPP.fighters = {
   get: function(tag) {
     data = OFAPP.file.readfile("FIGHTERS");
     index = Math.floor(Math.random() * data.length);
@@ -17,20 +17,42 @@ OFAPP.fighter = {
   }
 };
 
-OFAPP.power = {
-  get: function() {
-    console.log("getting power: ");
+OFAPP.powers = {
+  get: function(tag) {
+    data = OFAPP.file.readfile("POWERS");
+    index = Math.floor(Math.random() * data.length);
+    name0 = data[index];
+    console.log("getting power: "+name0);
+    tag.innerText = name0
   }
 };
 
-OFAPP.weapon = {
-  get: function() {
-    console.log("getting weapon: ");
+OFAPP.weapons = {
+  get: function(tag) {
+    data = OFAPP.file.readfile("WEAPONS");
+    index = Math.floor(Math.random() * data.length);
+    name0 = data[index];
+    console.log("getting weapon: "+name0);
+    tag.innerText = name0
   }
 };
 
 OFAPP.location = {
-  get: function() {
-    console.log("getting location: ");
+  get: function(tag) {
+    data = OFAPP.file.readfile("LOCATIONS");
+    index = Math.floor(Math.random() * data.length);
+    name0 = data[index];
+    console.log("getting location: "+name0);
+    tag.innerText = name0
+  }
+};
+
+OFAPP.nothing = {
+  get: function(tag) {
+    data = OFAPP.file.readfile("NOTHING");
+    index = Math.floor(Math.random() * data.length);
+    name0 = data[index];
+    console.log("getting nothing: "+name0);
+    tag.innerText = name0
   }
 };

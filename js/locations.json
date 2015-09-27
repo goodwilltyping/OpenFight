@@ -1,0 +1,7 @@
+var OFDATA = OFDATA || {};
+
+OFDATA["locations"] = [
+  "your house",
+  "mount doom",
+  "someone else's house"
+];

@@ -17,18 +17,26 @@
         <h1>OpenFight!!!</h1>
         <div id="col1" class="column">
             <h2>Ready Player 1</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.fighter.get(this);">Select your character</a>
-            <a href="javescript:void(0)"onclick="OFAPP.power.get();">Select your Superpower</a>
-            <a href="javescript:void(0)"onclick="OFAPP.weapon.get();">Select your weapon</a>
+            <a href="javescript:void(0)"onclick="OFAPP.fighters.get(this);">Select your character</a>
+            <a href="javescript:void(0)"onclick="OFAPP.powers.get(this);">Select your Superpower</a>
+            <a href="javescript:void(0)"onclick="OFAPP.weapons.get(this);">Select your weapon</a>
 
         </div>
         <div id="col2" class="column">
             <h2>Ready Player 2</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.fighter.get(this);">Select your character</a>
-            <a href="javescript:void(0)"onclick="OFAPP.power.get();">Select your Superpower</a>
-            <a href="javescript:void(0)"onclick="OFAPP.weapon.get();">Select your Weapon</a>
+            <a href="javescript:void(0)"onclick="OFAPP.fighters.get(this);">Select your character</a>
+            <a href="javescript:void(0)"onclick="OFAPP.powers.get(this);">Select your Superpower</a>
+            <a href="javescript:void(0)"onclick="OFAPP.weapons.get(this);">Select your Weapon</a>
         </div>
         <div id="footer"></div>
+        <div id="col3" class="column">
+            <h2>***optional*** location</h2>
+            <a href="javescript:void(0)"onclick="OFAPP.location.get(this);">Where are you?</a>
+        </div>
+        <div id="col4" class="column">
+            <h2>this button does nothing!</h2>
+            <a href="javescript:void(0)"onclick="OFAPP.nothing.get(this);">!!!</a>
+        </div>
     </div>
 
     <!-- Include Modernizr script to assist with browser compatibility -->
@@ -38,7 +46,9 @@
     <script src="js/fighters.json"></script>
     <script src="js/powers.json"></script>
     <script src="js/weapons.json"></script>
+    <script src="js/locations.json"></script>
     <script src="js/OpenFight.js"></script>
+    <script src="js/nothing.json"></script>
 
 </body>
 </html>
