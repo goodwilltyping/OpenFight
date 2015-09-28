@@ -22,6 +22,10 @@ OF_APP.file = {
     OF_APP.file.jsonp(remote, function(data){
       console.debug(data);
       OF_DATA = data;
+      OF_APP.file.writelocal("FIGHTERS", OF_APP.file.readdata("FIGHTERS"));
+      OF_APP.file.writelocal("POWERS", OF_APP.file.readdata("POWERS"));
+      OF_APP.file.writelocal("WEAPONS", OF_APP.file.readdata("WEAPONS"));
+      OF_APP.file.writelocal("LOCATIONS", OF_APP.file.readdata("LOCATIONS"));
     });
   },
 
@@ -34,57 +38,66 @@ OF_APP.file = {
       data[i] = OF_DATA.feed.entry[i++]["gsx$"+datatype.toLowerCase()]["$t"];
     };
     return data;
+  },
+
+  writelocal: function(key, value){
+    localStorage.setItem(key, JSON.stringify(value));
+  },
+
+  readlocal: function(key){
+    var value = localStorage.getItem(key);
+    return value && JSON.parse(value);
   }
 };
 
 OF_APP.fighters = {
   get: function(tag) {
-    data = OF_APP.file.readdata("FIGHTERS");
+    data = OF_APP.file.readlocal("FIGHTERS");
+    name1 = document.getElementById("fighter1").innerText;
+    name2 = document.getElementById("fighter2").innerText;
     do {
       index = Math.floor(Math.random() * data.length);
       name0 = data[index];
-      name1 = document.getElementById("fighter1").innerText;
-      name2 = document.getElementById("fighter2").innerText;
-      console.log("getting fighter: "+name0);
-      tag.innerText = name0;
-      tag.classList.add("active");
     }  while ((name0 == name1) || (name0 == name2));
+    console.log("getting fighter: "+name0);
+    tag.innerText = name0;
+    tag.classList.add("active");
   }
 };
 
 OF_APP.powers = {
   get: function(tag) {
-    data = OF_APP.file.readdata("POWERS");
+    data = OF_APP.file.readlocal("POWERS");
+    name1 = document.getElementById("power1").innerText;
+    name2 = document.getElementById("power2").innerText;
     do {
       index = Math.floor(Math.random() * data.length);
       name0 = data[index];
-      name1 = document.getElementById("power1").innerText;
-      name2 = document.getElementById("power2").innerText;
-      console.log("getting power: "+name0);
-      tag.innerText = name0;
-      tag.classList.add("active");
     }  while ((name0 == name1) || (name0 == name2));
+    console.log("getting power: "+name0);
+    tag.innerText = name0;
+    tag.classList.add("active");
   }
 };
 
 OF_APP.weapons = {
   get: function(tag) {
-    data = OF_APP.file.readdata("WEAPONS");
+    data = OF_APP.file.readlocal("WEAPONS");
+    name1 = document.getElementById("weapon1").innerText;
+    name2 = document.getElementById("weapon2").innerText;
     do {
       index = Math.floor(Math.random() * data.length);
       name0 = data[index];
-      name1 = document.getElementById("weapon1").innerText;
-      name2 = document.getElementById("weapon2").innerText;
-      console.log("getting weapon: "+name0);
-      tag.innerText = name0;
-      tag.classList.add("active");
     }  while ((name0 == name1) || (name0 == name2));
+    console.log("getting weapon: "+name0);
+    tag.innerText = name0;
+    tag.classList.add("active");
   }
 };
 
 OF_APP.location = {
   get: function(tag) {
-    data = OF_APP.file.readdata("LOCATIONS");
+    data = OF_APP.file.readlocal("LOCATIONS");
     index = Math.floor(Math.random() * data.length);
     name0 = data[index];
     console.log("getting location: "+name0);
