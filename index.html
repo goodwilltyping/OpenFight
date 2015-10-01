@@ -35,8 +35,15 @@
         </div>
         <!-- ROW 2 -->
         <div id="row2" class="row">
+          <div class="column">
             <h2>[Optional]</h2>
-            <a id="location1" href="javascript:void(0)" onclick="OF_APP.location.get(this);" class="select location">Select your location</a>
+            <a id="location1" href="javascript:void(0)" onclick="OF_APP.locations.get(this);" class="select location">Select your location</a>
+          </div>
+          <div class="column">
+            <h2>New Game</h2>
+            <a id="newgame" href="javascript:void(0)" onclick="OF_APP.game.new();" class="select">Start a new game</a>
+          </div>
+
         </div>
         <div id="footer"><small><em>This game has been created for educational purposes. <a href="https://github.com/goodwilltyping/OpenFight" target="_blank" class="blackbg">Fork on Github</a></em></small></div>
     </div>

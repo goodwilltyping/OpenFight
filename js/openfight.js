@@ -1,6 +1,33 @@
 var OF_APP  = OF_APP  || {};
 var OF_DATA = OF_DATA || {};
 
+/**
+ * GAME
+ */
+OF_APP.game = {
+  new: function() {
+    fighter1  = document.getElementById("fighter1");
+    fighter2  = document.getElementById("fighter2");
+    power1    = document.getElementById("power1");
+    power2    = document.getElementById("power2");
+    weapon1   = document.getElementById("weapon1");
+    weapon2   = document.getElementById("weapon2");
+    location1 = document.getElementById("location1");
+
+    // Reset all the cards
+    OF_APP.fighters.reset(fighter1);
+    OF_APP.fighters.reset(fighter2);
+    OF_APP.powers.reset(power1);
+    OF_APP.powers.reset(power2);
+    OF_APP.weapons.reset(weapon1);
+    OF_APP.weapons.reset(weapon2);
+    OF_APP.locations.reset(location1);
+  }
+};
+
+/**
+ * FILE FUNCTIONS
+ */
 OF_APP.file = {
   jsonp: function(url, callback) {
     console.log("getting JSONP file data: "+url);
@@ -34,7 +61,7 @@ OF_APP.file = {
         console.log("getting JSONP from localstorage");
         console.debug(data1);
       } else {
-        alert ("No internet connection detected and no local database available.\nConnect at least once to download the database");
+        alert ("No internet connection detected and no local database available.\nConnect at least once to download the database.");
       }
     }
   },
@@ -60,6 +87,9 @@ OF_APP.file = {
   }
 };
 
+/**
+ * CARD TYPES
+ */
 OF_APP.fighters = {
   get: function(tag) {
     data = OF_APP.file.readlocal("FIGHTERS");
@@ -72,6 +102,13 @@ OF_APP.fighters = {
     console.log("getting fighter: "+name0);
     tag.innerText = name0;
     tag.classList.add("active");
+  },
+
+  reset: function(tag) {
+    console.log("resetting fighter...");
+    console.log(tag);
+    tag.innerText = "Select your character";
+    tag.classList.remove("active");
   }
 };
 
@@ -87,6 +124,12 @@ OF_APP.powers = {
     console.log("getting power: "+name0);
     tag.innerText = name0;
     tag.classList.add("active");
+  },
+
+  reset: function(tag) {
+    console.log("resetting power...");
+    tag.innerText = "Select your superpower";
+    tag.classList.remove("active");
   }
 };
 
@@ -102,10 +145,16 @@ OF_APP.weapons = {
     console.log("getting weapon: "+name0);
     tag.innerText = name0;
     tag.classList.add("active");
+  },
+
+  reset: function(tag) {
+    console.log("resetting weapon...");
+    tag.innerText = "Select your weapon";
+    tag.classList.remove("active");
   }
 };
 
-OF_APP.location = {
+OF_APP.locations = {
   get: function(tag) {
     data = OF_APP.file.readlocal("LOCATIONS");
     index = Math.floor(Math.random() * data.length);
@@ -113,5 +162,11 @@ OF_APP.location = {
     console.log("getting location: "+name0);
     tag.innerText = name0;
     tag.classList.add("active")
+  },
+
+  reset: function(tag) {
+    console.log("resetting location...");
+    tag.innerText = "Select your location";
+    tag.classList.remove("active");
   }
 };
