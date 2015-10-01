@@ -92,16 +92,21 @@ OF_APP.file = {
  */
 OF_APP.fighters = {
   get: function(tag) {
-    data = OF_APP.file.readlocal("FIGHTERS");
-    name1 = document.getElementById("fighter1").innerText;
-    name2 = document.getElementById("fighter2").innerText;
-    do {
-      index = Math.floor(Math.random() * data.length);
-      name0 = data[index];
-    }  while ((name0 == name1) || (name0 == name2));
-    console.log("getting fighter: "+name0);
-    tag.innerText = name0;
-    tag.classList.add("active");
+    // Check that button is not already active
+    if (!tag.classList.contains("active")) {
+      data = OF_APP.file.readlocal("FIGHTERS");
+      name1 = document.getElementById("fighter1").innerText;
+      name2 = document.getElementById("fighter2").innerText;
+      // Loop values until a unique one is found
+      do {
+        index = Math.floor(Math.random() * data.length);
+        name0 = data[index];
+      }  while ((name0 == name1) || (name0 == name2));
+      // Update the page
+      console.log("getting fighter: "+name0);
+      tag.innerText = name0;
+      tag.classList.add("active");
+    }
   },
 
   reset: function(tag) {
@@ -114,16 +119,21 @@ OF_APP.fighters = {
 
 OF_APP.powers = {
   get: function(tag) {
-    data = OF_APP.file.readlocal("POWERS");
-    name1 = document.getElementById("power1").innerText;
-    name2 = document.getElementById("power2").innerText;
-    do {
-      index = Math.floor(Math.random() * data.length);
-      name0 = data[index];
-    }  while ((name0 == name1) || (name0 == name2));
-    console.log("getting power: "+name0);
-    tag.innerText = name0;
-    tag.classList.add("active");
+    // Check that button is not already active
+    if (!tag.classList.contains("active")) {
+      data = OF_APP.file.readlocal("POWERS");
+      name1 = document.getElementById("power1").innerText;
+      name2 = document.getElementById("power2").innerText;
+      // Loop values until a unique one is found
+      do {
+        index = Math.floor(Math.random() * data.length);
+        name0 = data[index];
+      }  while ((name0 == name1) || (name0 == name2));
+      // Update the page
+      console.log("getting power: "+name0);
+      tag.innerText = name0;
+      tag.classList.add("active");
+    }
   },
 
   reset: function(tag) {
@@ -135,16 +145,21 @@ OF_APP.powers = {
 
 OF_APP.weapons = {
   get: function(tag) {
-    data = OF_APP.file.readlocal("WEAPONS");
-    name1 = document.getElementById("weapon1").innerText;
-    name2 = document.getElementById("weapon2").innerText;
-    do {
-      index = Math.floor(Math.random() * data.length);
-      name0 = data[index];
-    }  while ((name0 == name1) || (name0 == name2));
-    console.log("getting weapon: "+name0);
-    tag.innerText = name0;
-    tag.classList.add("active");
+    // Check that button is not already active
+    if (!tag.classList.contains("active")) {
+      data = OF_APP.file.readlocal("WEAPONS");
+      name1 = document.getElementById("weapon1").innerText;
+      name2 = document.getElementById("weapon2").innerText;
+      // Loop values until a unique one is found
+      do {
+        index = Math.floor(Math.random() * data.length);
+        name0 = data[index];
+      }  while ((name0 == name1) || (name0 == name2));
+      // Update the page
+      console.log("getting weapon: "+name0);
+      tag.innerText = name0;
+      tag.classList.add("active");
+    }
   },
 
   reset: function(tag) {
@@ -156,12 +171,16 @@ OF_APP.weapons = {
 
 OF_APP.locations = {
   get: function(tag) {
-    data = OF_APP.file.readlocal("LOCATIONS");
-    index = Math.floor(Math.random() * data.length);
-    name0 = data[index];
-    console.log("getting location: "+name0);
-    tag.innerText = name0;
-    tag.classList.add("active")
+    // Check that button is not already active
+    if (!tag.classList.contains("active")) {
+      data = OF_APP.file.readlocal("LOCATIONS");
+      index = Math.floor(Math.random() * data.length);
+      name0 = data[index];
+      // Update the page
+      console.log("getting location: "+name0);
+      tag.innerText = name0;
+      tag.classList.add("active");
+    }
   },
 
   reset: function(tag) {
