@@ -1,0 +1,50 @@
+var OF_DATA = OF_DATA || {};
+
+OF_DATA["FIGHTERS"] = [
+  "Andrew",
+  "Jules",
+  "Will",
+  "Josh",
+  "Cornelia",
+  "Eriko",
+  "Ai",
+  "Akari"
+];
+
+var OF_DATA = OF_DATA || {};
+
+OF_DATA["POWERS"] = [
+  "Driving a car",
+  "Glued to screen",
+  "Headbanging to death metal",
+  "Hitting on Japanese girl",
+  "Recovering from a breakup",
+  "Sitting next to significant other",
+  "Has no WiFi connection",
+  "Walk through wood"
+];
+
+var OF_DATA = OF_DATA || {};
+
+OF_DATA["WEAPONS"] = [
+  "Bicycle made of Swords",
+  "Ghostbuster's vacuum",
+  "Over-sized Hammer",
+  "Hands hand-cuffed together",
+  "Rocket-powered hoverboard",
+  "Bazooka",
+  "Mach 5",
+  "Lightsaber"
+];
+
+var OF_DATA = OF_DATA || {};
+
+OF_DATA["LOCATIONS"] = [
+  "your house",
+  "mount doom",
+  "someone else's house",
+  "Your mom's house",
+  "Mt. Fuji",
+  "Mt. Doom",
+  "Death Star Cafeteria"
+];
