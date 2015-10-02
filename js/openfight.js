@@ -29,15 +29,15 @@ OF_APP.file = {
         OF_APP.file.writelocal("LOCATIONS", OF_APP.file.readdata("LOCATIONS"));
       });
     } else {
-      // CHeck localstorage for existing data
-      if (data1 = OF_APP.file.readlocal("FIGHTERS")) {
-        console.log("getting JSONP from localstorage");
-        console.debug(data1);
-      } else {
-        alert ("No internet connection detected and no local database available.\nConnect at least once to download the database");
-      }
-    }
-  },
+  OF_DATA = data;
+      OF_APP.file.writelocal("FIGHTERS", OF_APP.file.readdata("FIGHTERS"));
+      OF_APP.file.writelocal("POWERS", OF_APP.file.readdata("POWERS"));
+      OF_APP.file.writelocal("WEAPONS", OF_APP.file.readdata("WEAPONS"));
+      OF_APP.file.writelocal("LOCATIONS", OF_APP.file.readdata("LOCATIONS"));
+
+
+
+    }},
 
   readdata: function(datatype) {
     i = 0;
