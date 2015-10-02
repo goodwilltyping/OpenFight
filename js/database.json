@@ -1,36 +1,36 @@
 var OF_DATA = OF_DATA || {};
 
 OF_DATA["FIGHTERS"] = [
-  "Andrew",
-  "Jules",
-  "Will",
-  "Josh",
-  "Cornelia",
-  "Eriko",
-  "Ai",
-  "Akari"
+  "Batman",
+  "Gozilla",
+  "A group of missionaries",
+  "Ryu",
+  "Legolas",
+  "Patrick Stewart",
+  "Wolverine",
+  "Justin Beiber"
 ];
 
 var OF_DATA = OF_DATA || {};
 
 OF_DATA["POWERS"] = [
-  "Driving a car",
-  "Glued to screen",
-  "Headbanging to death metal",
+  "Swim thru air",
+  "Strong Social Media following",
+  "Headbanging to girly heavy metal",
   "Hitting on Japanese girl",
-  "Recovering from a breakup",
-  "Sitting next to significant other",
-  "Has no WiFi connection",
-  "Walk through wood"
+  "Socially awkward",
+  "One hand glued to butt",
+  "Has taylor swift on speed-dial",
+  "Can Walk through wood"
 ];
 
 var OF_DATA = OF_DATA || {};
 
 OF_DATA["WEAPONS"] = [
-  "Bicycle made of Swords",
-  "Ghostbuster's vacuum",
+  "T-shirt made of Swords",
+  "off-brand Swiss Army Knife",
   "Over-sized Hammer",
-  "Hands hand-cuffed together",
+  "over-agressive dog",
   "Rocket-powered hoverboard",
   "Bazooka",
   "Mach 5",
@@ -40,9 +40,9 @@ OF_DATA["WEAPONS"] = [
 var OF_DATA = OF_DATA || {};
 
 OF_DATA["LOCATIONS"] = [
-  "your house",
-  "mount doom",
-  "someone else's house",
+  "soccer stadium",
+  "La vegas",
+  "Stadium-sized MegaChruch",
   "Your mom's house",
   "Mt. Fuji",
   "Mt. Doom",
