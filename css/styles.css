@@ -1,21 +1,6 @@
 html {
-  background-color:lightgray;
+  background-color: lightgray;
   font-family: sans-serif;
-}
-
-h1 {
-  text-align:center;
-  font-size: 48px;
-  color: black;
-}
-
-h3 {
-  color:darkgray;
-  font-style: italic;
-}
-
-div {
-  text-align:center;
 }
 
 a.blackbg:link,
@@ -25,56 +10,61 @@ a.blackbg:visited {
 
 a.select:link,
 a.select:visited {
-  display:block;
+  display: block;
   text-align: center;
   text-decoration: none;
   color: black;
   width: 200px;
   margin: 10px auto;
-  padding:30px 10px;
+  padding: 30px 10px;
   border: 2px solid black;
-  background-color:lightgray;
+  background-color: lightgray;
 }
 
 a.select:hover,
 a.select.active {
-  color:white;
-  border-color:white;
+  color: white;
+  border-color: white;
   background-color: black;
 }
 
 a.select.fighter.active {
-  color:black;
-  border-color:lightgray;
+  color: black;
+  border-color: lightgray;
   background-color: white;
 }
 
 a.select.location.active {
-  color:darkgreen;
-  border-color:green;
+  color: darkgreen;
+  border-color: green;
   background-color: lightgreen;
 }
 
 a.select:active {
-  color:black;
+  color: black;
 }
 
 #container {
-  width:80%;
+  width: 80%;
   margin: auto;
-  padding:20px;
-  background-color:white;
+  padding: 20px;
+  background-color: white;
   box-shadow: 10px 10px 5px gray;
 }
 
 .header {
   padding: 2px 0;
   background-color: #EEE;
+  text-align: center;
+  font-size: 24px;
+  color: black;
 }
 
 .subtitle {
   background-color: #333;
-  color: #EEE;
+  color: lightgrey;
+  text-align:center;
+  font-style: italic;
   padding: 2px 0;
 }
 
@@ -85,7 +75,7 @@ a.select:active {
 
 .menu>ul>li {
   display: block;
-  float:left;
+  float: left;
   border-right: solid 1px black;
   padding: 0 20px;
 }
@@ -116,7 +106,7 @@ a.select:active {
 }
 
 .row {
-  clear:both;
+  clear: both;
 }
 
 .footer {
