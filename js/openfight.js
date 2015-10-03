@@ -10,6 +10,10 @@ OF_APP.game = {
   },
 
   new: function() {
+    if (document.location.href.indexOf("index.html") < 0) {
+      document.location.href = "index.html"
+    }
+
     fighter1  = document.getElementById("fighter1");
     fighter2  = document.getElementById("fighter2");
     power1    = document.getElementById("power1");

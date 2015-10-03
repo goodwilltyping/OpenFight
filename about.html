@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Open Fight!</title>
+  <title>About | Open Fight!</title>
   <meta name="description" content="CAN U PWN DEM NOOBS SWAG SWAG 420 420 69">
   <meta name="author" content="GoodWillTyping, Akahadaka">
 
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
-<body onload="OF_APP.game.load();">
+<body>
   <div id="container">
     <!-- HEADER -->
     <div class="header"><h1 onclick="document.location.reload()">!! Open Fight !!</h1></div>
@@ -20,37 +20,20 @@
     <!-- MENU -->
     <div class="menu">
       <ul>
-        <li class="first active"><a href="javascript:void(0)" onclick="OF_APP.game.new()">New Game</a></li>
+        <li class="first"><a href="javascript:void(0)" onclick="OF_APP.game.new()">New Game</a></li>
         <li><a href="javascript:void(0)" onclick="OF_APP.game.shuffle()">Shuffle Deck</a></li>
         <li><a href="help.html">Help</a></li>
-        <li class="last"><a href="about.html">About</a></li>
+        <li class="last active"><a href="about.html">About</a></li>
       </ul>
     </div>
     <!-- ROW 1 -->
     <div id="row1" class="row">
       <div id="col1" class="column">
-        <h2>Ready Player 1</h2>
-        <a id="fighter1" href="javascript:void(0)" onclick="OF_APP.fighters.get(this);" class="select fighter">Select your character</a>
-        <a id="power1" href="javascript:void(0)" onclick="OF_APP.powers.get(this);" class="select power">Select your superpower</a>
-        <a id="weapon1" href="javascript:void(0)" onclick="OF_APP.weapons.get(this);" class="select weapon">Select your weapon</a>
-
+        <h2>How to play the game</h2>
       </div>
       <div id="col2" class="column">
-        <h2>Ready Player 2</h2>
-        <a id="fighter2" href="javascript:void(0)" onclick="OF_APP.fighters.get(this);" class="select fighter">Select your character</a>
-        <a id="power2" href="javascript:void(0)" onclick="OF_APP.powers.get(this);" class="select power">Select your superpower</a>
-        <a id="weapon2" href="javascript:void(0)" onclick="OF_APP.weapons.get(this);" class="select weapon">Select your weapon</a>
+        <h2>Rules</h2>
       </div>
-      <div id="col3" class="column">
-        <h2>[Optional]</h2>
-        <a id="location1" href="javascript:void(0)" onclick="OF_APP.locations.get(this);" class="select location">Select your location</a>
-      </div>
-    </div>
-    <!-- ROW 2 -->
-    <div id="row2" class="row">
-      <div class="column">
-      </div>
-
     </div>
     <div class="footer">
       <small><em>This game has been created for educational purposes.
@@ -63,6 +46,5 @@
 
   <!-- Custom Javascript scripts loaded -->
   <script src="js/openfight.js"></script>
-
 </body>
 </html>

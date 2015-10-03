@@ -7,8 +7,6 @@ h1 {
   text-align:center;
   font-size: 48px;
   color: black;
-  padding: 20px 0;
-  background-color: #EEE;
 }
 
 h3 {
@@ -18,11 +16,6 @@ h3 {
 
 div {
   text-align:center;
-}
-
-h1>a:link {
-  text-decoration: none;
-  color: black;
 }
 
 a.blackbg:link,
@@ -74,27 +67,63 @@ a.select:active {
   box-shadow: 10px 10px 5px gray;
 }
 
+.header {
+  padding: 2px 0;
+  background-color: #EEE;
+}
+
+.subtitle {
+  background-color: #333;
+  color: #EEE;
+  padding: 2px 0;
+}
+
+.menu {
+  width: 480px;
+  margin: auto;
+}
+
+.menu>ul>li {
+  display: block;
+  float:left;
+  border-right: solid 1px black;
+  padding: 0 20px;
+}
+
+.menu>ul>li.last {
+  border-right: none;
+}
+
+.menu>ul>li.active {
+  background-color: #EEE;
+}
+
+.menu>ul>li>a:link,
+.menu>ul>li>a:visited {
+  color: darkorange;
+  text-decoration: none;
+}
+
+.menu>ul>li>a:hover {
+  color: orange;
+}
+
 .column {
-    float: left;
-    width: 45%;
-    padding: 10px;
-    margin: 2px;
+  float: left;
+  width: 30%;
+  padding: 10px;
+  margin: 2px;
 }
 
 .row {
   clear:both;
 }
 
-#row2 {
-    padding: 10px;
-    margin: auto;
-}
-
-#footer {
-  clear:both;
-  text-align: right;
+.footer {
+  clear: both;
+  text-align: center;
   color: white;
-  background-color: black;
-  padding: 2px 10px;
-  margin-top:20px;
+  background-color: #333;
+  padding: 5px 10px;
+  margin-top: 30px;
 }
