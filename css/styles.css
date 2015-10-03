@@ -105,6 +105,10 @@ a.select:active {
   margin: 2px;
 }
 
+.column>h2 {
+  text-align: center;
+}
+
 .row {
   clear: both;
 }

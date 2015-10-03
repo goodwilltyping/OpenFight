@@ -30,6 +30,10 @@ OF_APP.game = {
     OF_APP.weapons.reset(weapon1);
     OF_APP.weapons.reset(weapon2);
     OF_APP.locations.reset(location1);
+  },
+
+  shuffle: function() {
+    document.location.href = "index.html"
   }
 };
 
