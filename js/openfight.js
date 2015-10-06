@@ -1,15 +1,15 @@
-var OFAPP = OFAPP || {};
+var OF_APP = OF_APP || {};
 
-OFAPP.file = {
+OF_APP.file = {
   readfile: function(filename) {
     console.log("getting data file: "+filename);
     return OFDATA[filename];
   }
 };
 
-OFAPP.fighters = {
+OF_APP.fighters = {
   get: function(tag) {
-    data = OFAPP.file.readfile("FIGHTERS");
+    data = OF_APP.file.readfile("FIGHTERS");
     index = Math.floor(Math.random() * data.length);
     name0 = data[index];
     console.log("getting fighter: "+name0);
@@ -17,9 +17,9 @@ OFAPP.fighters = {
   }
 };
 
-OFAPP.powers = {
+OF_APP.powers = {
   get: function(tag) {
-    data = OFAPP.file.readfile("POWERS");
+    data = OF_APP.file.readfile("POWERS");
     index = Math.floor(Math.random() * data.length);
     name0 = data[index];
     console.log("getting power: "+name0);
@@ -27,9 +27,9 @@ OFAPP.powers = {
   }
 };
 
-OFAPP.weapons = {
+OF_APP.weapons = {
   get: function(tag) {
-    data = OFAPP.file.readfile("WEAPONS");
+    data = OF_APP.file.readfile("WEAPONS");
     index = Math.floor(Math.random() * data.length);
     name0 = data[index];
     console.log("getting weapon: "+name0);
@@ -37,9 +37,9 @@ OFAPP.weapons = {
   }
 };
 
-OFAPP.location = {
+OF_APP.location = {
   get: function(tag) {
-    data = OFAPP.file.readfile("LOCATIONS");
+    data = OF_APP.file.readfile("LOCATIONS");
     index = Math.floor(Math.random() * data.length);
     name0 = data[index];
     console.log("getting location: "+name0);
@@ -47,9 +47,9 @@ OFAPP.location = {
   }
 };
 
-OFAPP.nothing = {
+OF_APP.nothing = {
   get: function(tag) {
-    data = OFAPP.file.readfile("NOTHING");
+    data = OF_APP.file.readfile("NOTHING");
     index = Math.floor(Math.random() * data.length);
     name0 = data[index];
     console.log("getting nothing: "+name0);

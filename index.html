@@ -14,24 +14,30 @@
 </head>
 <body>
     <div id="container">
-        <h1>OpenFight!!!</h1>
-        <div id="col1" class="column">
-            <h2>Ready Player 1</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.fighters.get(this);">Select your character</a>
-            <a href="javescript:void(0)"onclick="OFAPP.powers.get(this);">Select your Superpower</a>
-            <a href="javescript:void(0)"onclick="OFAPP.weapons.get(this);">Select your weapon</a>
+<!-- header -->
+     <div class="header"><h1 onclick="document.location.reload()"><h1>OpenFight!!!</h1></div>
 
-        </div>
-        <div id="col2" class="column">
+<!-- row1fighters -->
+     <div id="row1" class="row">
+          <div id="col1" class="column">
+            <h2>Ready Player 1</h2>
+            <a id="fighter1" href="javescript:void(0)"onclick="OF_APP.fighters.get(this);">Select your character</a>
+            <a id="power1" href="javescript:void(0)"onclick="OF_APP.powers.get(this);">Select your Superpower</a>
+            <a id="weapon1" href="javescript:void(0)"onclick="OF_APP.weapons.get(this);">Select your weapon</a>
+
+          </div>
+          <div id="col2" class="column">
             <h2>Ready Player 2</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.fighters.get(this);">Select your character</a>
-            <a href="javescript:void(0)"onclick="OFAPP.powers.get(this);">Select your Superpower</a>
-            <a href="javescript:void(0)"onclick="OFAPP.weapons.get(this);">Select your Weapon</a>
+            <a id="fighter2" href="javescript:void(0)"onclick="OF_APP.fighters.get(this);">Select your character</a>
+            <a id="power2" href="javescript:void(0)"onclick="OF_APP.powers.get(this);">Select your Superpower</a>
+            <a id="weapon2" href="javescript:void(0)"onclick="OF_APP.weapons.get(this);">Select your Weapon</a>
         </div>
-        <div id="footer"></div>
+
         <div id="col3" class="column">
             <h2>***optional*** location</h2>
-            <a href="javescript:void(0)"onclick="OFAPP.location.get(this);">Where are you?</a>
+            <a href="javescript:void(0)"onclick="OF_APP.location.get(this);">Where are you?</a>
+              <h3>this button does nothing!</h3>
+            <a href="javescript:void(0)"onclick="OF_APP.nothing.get(this);">!!!</a>
         </div>
         <!-- <div id="col4" class="column">
             <h2>this button does nothing!</h2>
