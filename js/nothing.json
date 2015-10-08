@@ -1,6 +1,7 @@
-var OFDATA = OFDATA || {};
+var OF_APP = OF_APP || {};
+var OF_DATA = OF_DATA || {};
 
-OFDATA["NOTHING"] = [
+OF_DATA["NOTHING"] = [
   "!!!!!!",
   "!",
   "!!!!!!!!!!!!",

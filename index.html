@@ -8,15 +8,23 @@
     <meta name="description" content="CAN U PWN DEM NOOBS SWAG SWAG 420 420 69">
     <meta name="author" content="Akahadaka">
 
-    <!-- Custom CSS stylesheets loaded -->
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+      <!-- Custom CSS stylesheets loaded -->
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+      <!-- Custom Javascript scripts loaded -->
+        <script src="js/fighters.json"></script>
+        <script src="js/powers.json"></script>
+        <script src="js/weapons.json"></script>
+        <script src="js/locations.json"></script>
+        <script src="js/openfight.js"></script>
+        <script src="js/nothing.json"></script>
 
 </head>
-<body>
+<body onload="OF_APP.game.load();">
     <div id="container">
 <!-- header -->
      <div class="header"><h1 onclick="document.location.reload()"><h1>OpenFight!!!</h1></div>
-
+     <div class="subtitle"><h3>The real world game where you use your words to fight...to...the...death!!</h3></div>
 <!-- row1fighters -->
      <div id="row1" class="row">
           <div id="col1" class="column">
@@ -35,7 +43,7 @@
 
         <div id="col3" class="column">
             <h2>***optional*** location</h2>
-            <a href="javescript:void(0)"onclick="OF_APP.location.get(this);">Where are you?</a>
+            <a href="javescript:void(0)"onclick="OF_APP.locations.get(this);">Where are you?</a>
               <h3>this button does nothing!</h3>
             <a href="javescript:void(0)"onclick="OF_APP.nothing.get(this);">!!!</a>
         </div>
@@ -48,13 +56,6 @@
     <!-- Include Modernizr script to assist with browser compatibility -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-    <!-- Custom Javascript scripts loaded -->
-    <script src="js/fighters.json"></script>
-    <script src="js/powers.json"></script>
-    <script src="js/weapons.json"></script>
-    <script src="js/locations.json"></script>
-    <script src="js/OpenFight.js"></script>
-    <script src="js/nothing.json"></script>
 
 </body>
 </html>
