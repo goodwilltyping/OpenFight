@@ -98,14 +98,28 @@ a.select:active {
   color: orange;
 }
 
-.column {
+.column{
   float: left;
-  width: 30%;
+  width:47%;
   padding: 10px;
   margin: 2px;
 }
 
-.column>h2 {
+.column.big {
+  width: 26%;
+}
+
+.column.small {
+    width: 5%;
+    margin-top: 210px;
+}
+
+#col3 {
+  margin-top: 135px;
+}
+
+.column>h2,
+.column>p  {
   text-align: center;
 }
 
