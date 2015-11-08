@@ -1,3 +1,57 @@
+.page {
+  background-color: #EEE;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: 10px 10px 5px gray;
+}
+
+.players .title,
+.players .insert {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.card {
+  border-width: 10px;
+  border-style:solid;
+  border-radius: 20px;
+  padding: 0;
+  display:table;
+  width:100%
+}
+
+.card.white {
+  background-color: #FFF;
+  border: 10px solid #EEE;
+  color: #222;
+}
+
+.card.black {
+  background-color: #000;
+  border: 10px solid #222;
+  color: #FFF;
+}
+
+.card.green {
+  background-color: #080;
+  border: 10px solid #3C3;
+  color: #CFC;
+}
+
+.card > .text {
+  height: 300px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+
 /*
 html {
   background-color: lightgray;

@@ -23,12 +23,12 @@
     <!-- Include any Custom CSS -->
     <link rel="stylesheet" href="css/styles.css?v=1.0">
   </head>
-  <body onload="OF_APP.game.load();">
+  <body onload="OF_APP.game.load();" class="page">
 
     <!-- HEADER -->
     <div class="container">
       <div class="row">
-        <div class="col-md-12 page-header">
+        <div class="col-sm-12 page-header">
           <h1 onclick="document.location.reload()">OpenFight</h1>
           <h1><small>The real world game where you use your words to fight to the death</small></h1>
         </div>
@@ -36,7 +36,7 @@
 
       <!-- NAVIGATION -->
       <div class="row">
-        <div class="cole-md-12 menu" role="navigation">
+        <div class="cole-sm-12 menu" role="navigation">
           <ul class="nav nav-tabs">
             <li role="presentation" class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Game <span class="caret"></span></a>
@@ -53,43 +53,49 @@
 
 
       <!-- GAME -->
-      <div class="row">
-        <div class="col-md-3">
-          <h2>Player 1 is</h2>
-          <a id="fighter1" href="javascript:void(0)" onclick="OF_APP.fighters.get(this);" class="select fighter">Select your character</a>
-          <p>who</p>
-          <a id="power1" href="javascript:void(0)" onclick="OF_APP.powers.get(this);" class="select power">Select your superpower</a>
-          <p>and</p>
-          <a id="weapon1" href="javascript:void(0)" onclick="OF_APP.weapons.get(this);" class="select weapon">Select your weapon</a>
+      <div class="row players">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+          <div class="title">Player 1:</div>
+          <div id="fighter1" class="well card white">
+            <div class="text" onclick="OF_APP.fighters.get(this);">Select your character</div>
+          </div>
+
+          <div id="power1" class="well card black">
+            <div class="text" onclick="OF_APP.powers.get(this);">Select<br />your superpower</div>
+          </div>
+
+          <div id="weapon1" class="well card black">
+            <div class="text" onclick="OF_APP.weapons.get(this);">Select your weapon</div>
+          </div>
         </div>
 
-        <div class="col-md-1">
-          <h2>vs</h2>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+          <div class="title">Player 2:</div>
+          <div id="fighter2" class="well card white">
+            <div class="text" onclick="OF_APP.fighters.get(this);">Select your character</div>
+          </div>
+
+          <div id="power2" class="well card black">
+            <div class="text" onclick="OF_APP.powers.get(this);">Select<br />your superpower</div>
+          </div>
+
+          <div id="weapon2" class="well card black">
+            <div class="text" onclick="OF_APP.weapons.get(this);">Select your weapon</div>
+          </div>
         </div>
 
-        <div class="col-md-3">
-          <h2>Player 2 is</h2>
-          <a id="fighter2" href="javascript:void(0)" onclick="OF_APP.fighters.get(this);" class="select fighter">Select your character</a>
-          <p>who</p>
-          <a id="power2" href="javascript:void(0)" onclick="OF_APP.powers.get(this);" class="select power">Select your superpower</a>
-          <p>and</p>
-          <a id="weapon2" href="javascript:void(0)" onclick="OF_APP.weapons.get(this);" class="select weapon">Select your weapon</a>
-        </div>
-
-        <div class="col-md-1">
-          <h2>set</h2>
-        </div>
-
-        <div class="col-md-4">
-          <h2>[Optional]</h2>
-          <a id="location1" href="javascript:void(0)" onclick="OF_APP.locations.get(this);" class="select location">Select your location</a>
+        <div class="ol-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+          <div class="title">[Optional]</div>
+          <div id="location1" class="well card green">
+            <div class="text" onclick="OF_APP.locations.get(this);">Select your location</div>
+          </div>
         </div>
 
       </div>
 
       <!-- FOOTER -->
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-sm-12 well navbar-bottom">
           <small><em>This game has been created for educational purposes.
           <a href="https://github.com/goodwilltyping/OpenFight" target="_blank" class="blackbg">Fork on Github</em></small>
         </div>
