@@ -4,16 +4,44 @@
 
 .container {
   margin: 20px auto;
-  padding: 20px;
+  padding: 15px;
   background-color: #FFF;
   box-shadow: 10px 10px 5px gray;
 }
 
-.players .title,
-.players .insert {
+.page-header {
+  margin-top: -15px;
+  text-align: center;
+}
+
+.page-header > * {
+  border: none;
+  border-radius: 0;
+}
+
+.page-header h1,
+.page-header .h1 {
+  font-size: 32px;
+}
+
+.page-header > .header {
+  color: #333;
+}
+
+.page-header > .subtitle {
+  background-color: #AAA;
+  padding: 0 25px;
+}
+
+.nav-tabs {
+  padding: 0 20px;
+}
+
+.players .title {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
+  color: #F80;
 }
 
 .card {
@@ -50,6 +78,12 @@
   text-align: center;
   font-weight: bold;
   font-size: 32px;
+}
+
+.navbar-bottom {
+  background-color: #333;
+  color: #FFF;
+  text-align: right;
 }
 
 /*
