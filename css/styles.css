@@ -2,6 +2,10 @@
   background-color: #EEE;
 }
 
+.page a {
+  color: #F80;
+}
+
 .container {
   margin: 20px auto;
   padding: 15px;
@@ -12,6 +16,7 @@
 .page-header {
   margin-top: -15px;
   text-align: center;
+  border-bottom: none;
 }
 
 .page-header > * {
@@ -84,6 +89,8 @@
   background-color: #333;
   color: #FFF;
   text-align: right;
+  border: none;
+  border-radius: 0;
 }
 
 /*
