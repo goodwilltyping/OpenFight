@@ -1,5 +1,15 @@
+/**
+ * OpenFight v1.3
+ * @description Open source card game made for fun and educational purposes
+ * @author akahadaka, goodwilltyping
+ * @license MIT
+ */
+
+// Main OpenFight App Object
 var OF_APP  = OF_APP  || {};
-var OF_DATA = OF_DATA || {};
+
+// Remote database served from Google spreadsheets in JSON format
+var OF_DATA = "https://spreadsheets.google.com/feeds/list/15VybWTsJQ1N9NL-GTITUcDXtjC7x_b-c_LIWuS1-tPE/od6/public/values?alt=json-in-script";
 
 /**
  * GAME
@@ -14,22 +24,11 @@ OF_APP.game = {
       document.location.href = "index.html"
     }
 
-    fighter1  = document.getElementById("fighter1");
-    fighter2  = document.getElementById("fighter2");
-    power1    = document.getElementById("power1");
-    power2    = document.getElementById("power2");
-    weapon1   = document.getElementById("weapon1");
-    weapon2   = document.getElementById("weapon2");
-    location1 = document.getElementById("location1");
-
-    // Reset all the cards
-    OF_APP.fighters.reset(fighter1);
-    OF_APP.fighters.reset(fighter2);
-    OF_APP.powers.reset(power1);
-    OF_APP.powers.reset(power2);
-    OF_APP.weapons.reset(weapon1);
-    OF_APP.weapons.reset(weapon2);
-    OF_APP.locations.reset(location1);
+    // Reset each of the cards
+    $('.fighter > .text').each(function(){OF_APP.fighters.reset(this);});
+    $('.power > .text').each(function(){OF_APP.powers.reset(this);});
+    $('.weapon > .text').each(function(){OF_APP.weapons.reset(this);});
+    $('.location > .text').each(function(){OF_APP.locations.reset(this);});
   },
 
   shuffle: function() {
@@ -60,8 +59,7 @@ OF_APP.file = {
     // Check if the app is online
     if (navigator.onLine) {
       // Get data from a shared Google Docs spreadsheet published to web and read as JSONP
-      remote = "https://spreadsheets.google.com/feeds/list/15VybWTsJQ1N9NL-GTITUcDXtjC7x_b-c_LIWuS1-tPE/od6/public/values?alt=json-in-script";
-      OF_APP.file.jsonp(remote, function(data){
+      OF_APP.file.jsonp(OF_DATA, function(data){
         console.debug(data);
         OF_APP.file.writeLocal("openfight.json", data);
         OF_APP.file.writeLocal("FIGHTERS", OF_APP.file.readData("FIGHTERS", data));

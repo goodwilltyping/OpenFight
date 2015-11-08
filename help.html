@@ -1,68 +1,108 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Help | Open Fight!</title>
-  <meta name="description" content="CAN U PWN DEM NOOBS SWAG SWAG 420 420 69">
+  <!-- Sets initial viewport load -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title and description of this webpage -->
+  <title>Help|OpenFight</title>
+
+  <meta name="description" content="OpenFight was created as an educational project.">
   <meta name="author" content="GoodWillTyping, Akahadaka">
 
-  <!-- Custom CSS stylesheets loaded -->
+  <!-- Makes prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Include the compiled Third Party CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Include any Custom CSS -->
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+  <link rel="stylesheet" href="css/forkongithub.css?v=1.0">
 </head>
-<body>
+<body class="page">
   <div id="container">
+    <!-- FORK ON GITHUB -->
+    <span class="forkongithub">
+      <a href="https://github.com/goodwilltyping/OpenFight" target="_blank">Fork me on GitHub</a>
+    </span>
+
     <!-- HEADER -->
-    <div class="header"><h1 onclick="document.location.reload()">!! Open Fight !!</h1></div>
-    <div class="subtitle"><h3>The real world game where you use your words to fight to the death</h3></div>
-    <!-- MENU -->
-    <div class="menu">
-      <ul>
-        <li class="first"><a href="javascript:void(0)" onclick="OF_APP.game.new()">New Round</a></li>
-        <li><a href="javascript:void(0)" onclick="OF_APP.game.shuffle()">New Game</a></li>
-        <li class="active"><a href="help.html">Help</a></li>
-        <li class="last"><a href="about.html">About</a></li>
-      </ul>
+    <div class="container">
+      <div class="row page-header">
+        <div class="col-sm-12 header well-lg">
+          <h1 onclick="document.location.reload()">OpenFight</h1>
+        </div>
+        <div class="col-sm-12 subtitle well-sm">
+          <h1><small>The real world game where you use your words to fight to the death</small></h1>
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+      <div class="row">
+        <div class="cole-sm-12 menu" role="navigation">
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Game <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:void(0)" onclick="OF_APP.game.shuffle()">New Game</a></li>
+                  <li><a href="javascript:void(0)" onclick="OF_APP.game.new()">New Round</a></li>
+                </ul>
+              </li>
+            <li role="presentation" class="active"><a href="help.html">Help</a></li>
+            <li role="presentation"><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- CONTENT -->
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>How to play the game</h2>
+        <p>The following how-to is a suggestion only and creativity is encouraged when establishing the rules and boundaries of the game (if at all).</p>
+
+        <p>This is a 3 Player real world game where the card deck is stored digitally. 2 Players each take turns randomly "drawing cards" from the deck.
+
+        <p>
+          <ol>
+            <li>The first card each of the 2 players draws will reveals the fighter they represent.</li>
+            <li>The second card they each choose will reveal any superpowers their character might have attained in their lifetime.</li>
+            <li>The third card chosen by each will reveal any weapons they that may be at their disposal for this particular battle.</li>
+            <li>An optional fourth card drawn will decide the location of the battle.</li>
+          </ol>
+        </p>
+
+        <p>The 3rd Player will act as the adjudicator. If there are any queries as to the nature of the characters or their attributes, the judge is to be approached for clarification. All interpretations are at the judges discretion and the judges decision is final.</p>
+
+        <p>
+          <ol>
+            <li>Both Player 1 and 2 each have a few minutes to introduce their characters.</li>
+            <li>They then each have a few minutes to make their case for their characters offensive abilities.</li>
+            <li>Now they each have time to make a case for their characters defensive capabilities, taking into account their opponents offensive.</li>
+            <li>Finally, when then judge calls "time" they have 30 seconds each to add final thoughts and convince the judge of their battle superiority.</li>
+          </ol>
+        </p>
+
+        <p>The judge delivers their final verdict and a winner is chosen.</p>
+      </div>
     </div>
-    <!-- ROW 1 -->
-    <div id="row1" class="row">
-      <h2>How to play the game</h2>
-      <p>The following how-to is a suggestion only and creativity is encouraged when establishing the rules and boundaries of the game (if at all).</p>
 
-      <p>This is a 3 Player real world game where the card deck is stored digitally. 2 Players each take turns randomly "drawing cards" from the deck.
-
-      <p>
-        <ol>
-          <li>The first card each of the 2 players draws will reveals the fighter they represent.</li>
-          <li>The second card they each choose will reveal any superpowers their character might have attained in their lifetime.</li>
-          <li>The third card chosen by each will reveal any weapons they that may be at their disposal for this particular battle.</li>
-          <li>An optional fourth card drawn will decide the location of the battle.</li>
-        </ol>
-      </p>
-
-      <p>The 3rd Player will act as the adjudicator. If there are any queries as to the nature of the characters or their attributes, the judge is to be approached for clarification. All interpretations are at the judges discretion and the judges decision is final.</p>
-
-      <p>
-        <ol>
-          <li>Both Player 1 and 2 each have a few minutes to introduce their characters.</li>
-          <li>They then each have a few minutes to make their case for their characters offensive abilities.</li>
-          <li>Now they each have time to make a case for their characters defensive capabilities, taking into account their opponents offensive.</li>
-          <li>Finally, when then judge calls "time" they have 30 seconds each to add final thoughts and convince the judge of their battle superiority.</li>
-        </ol>
-      </p>
-
-      <p>The judge delivers their final verdict and a winner is chosen.</p>
+    <!-- FOOTER -->
+    <div class="row">
+      <div class="col-sm-12 well navbar-bottom">
+        <small><em>This game has been created for educational purposes.
+        <a href="https://github.com/goodwilltyping/OpenFight" target="_blank">Fork me on Github</em></small>
+      </div>
     </div>
-    <div class="footer">
-      <small><em>This game has been created for educational purposes.
-      <a href="https://github.com/goodwilltyping/OpenFight" target="_blank" class="blackbg">Fork on Github</em></small>
-    </div>
+
   </div>
-
-  <!-- Include Modernizr script to assist with browser compatibility -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <!-- Include the compiled Third Party JS -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
   <!-- Custom Javascript scripts loaded -->
   <script src="js/openfight.js"></script>

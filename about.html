@@ -1,40 +1,74 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>About | Open Fight!</title>
-  <meta name="description" content="CAN U PWN DEM NOOBS SWAG SWAG 420 420 69">
+  <!-- Sets initial viewport load -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title and description of this webpage -->
+  <title>About|OpenFight</title>
+
+  <meta name="description" content="OpenFight was created as an educational project.">
   <meta name="author" content="GoodWillTyping, Akahadaka">
 
-  <!-- Custom CSS stylesheets loaded -->
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <!-- Makes prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+  <!-- Include the compiled Third Party CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Include any Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/forkongithub.css?v=1.0">
 </head>
-<body>
+<body class="page">
   <div id="container">
+    <!-- FORK ON GITHUB -->
+    <span class="forkongithub">
+      <a href="https://github.com/goodwilltyping/OpenFight" target="_blank">Fork me on GitHub</a>
+    </span>
+
     <!-- HEADER -->
-    <div class="header"><h1 onclick="document.location.reload()">!! Open Fight !!</h1></div>
-    <div class="subtitle"><h3>The real world game where you use your words to fight to the death</h3></div>
-    <!-- MENU -->
-    <div class="menu">
-      <ul>
-        <li class="first"><a href="javascript:void(0)" onclick="OF_APP.game.new()">New Round</a></li>
-        <li><a href="javascript:void(0)" onclick="OF_APP.game.shuffle()">New Game</a></li>
-        <li><a href="help.html">Help</a></li>
-        <li class="last active"><a href="about.html">About</a></li>
-      </ul>
-    </div>
-    <!-- ROW 1 -->
-    <div id="row1" class="row">
-      <div id="col1" class="column">
+    <div class="container">
+      <div class="row page-header">
+        <div class="col-sm-12 header well-lg">
+          <h1 onclick="document.location.reload()">OpenFight</h1>
+        </div>
+        <div class="col-sm-12 subtitle well-sm">
+          <h1><small>The real world game where you use your words to fight to the death</small></h1>
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+      <div class="row">
+        <div class="cole-sm-12 menu" role="navigation">
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Game <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:void(0)" onclick="OF_APP.game.shuffle()">New Game</a></li>
+                  <li><a href="javascript:void(0)" onclick="OF_APP.game.new()">New Round</a></li>
+                </ul>
+              </li>
+            <li role="presentation"><a href="help.html">Help</a></li>
+            <li role="presentation" class="active"><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- CONTENT -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
         <h2>About this game</h2>
         <p>This is a real world game originally developed by </p>
         <p>We loved the concept of Super Fight, but when out and about never had a deck handy. The logical thing was to look for an online generator, but either due to a lack of searching abilities or lack of availablity, we couldn't find one. The next logical step was then to make one ourselves, however, there also seemed to be a decided lack in experience (and time) when it came to developing such an app, thus the OpenFight app was born as an educational project.</p>
         <p>It's open source, so enjoy! And show your support by contributing.</p>
       </div>
-      <div id="col2" class="column">
+
+      <div class="col-xs-12 col-sm-6">
         <h2>Contact</h2>
         <p><b>GoodWillTyping</b></p>
         <p>Github: <a href="https://github.com/goodwilltyping/">git@gigithub.com:goodwilltyping</a></p>
@@ -46,14 +80,19 @@
         <p><a href="https://github.com/goodwilltyping/OpenFight/issues">https://github.com/goodwilltyping/OpenFight/issues</a></p>
       </div>
     </div>
-    <div class="footer">
-      <small><em>This game has been created for educational purposes.
-      <a href="https://github.com/goodwilltyping/OpenFight" target="_blank" class="blackbg">Fork on Github</em></small>
-    </div>
-  </div>
 
-  <!-- Include Modernizr script to assist with browser compatibility -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- FOOTER -->
+    <div class="row">
+      <div class="col-sm-12 well navbar-bottom">
+        <small><em>This game has been created for educational purposes.
+        <a href="https://github.com/goodwilltyping/OpenFight" target="_blank">Fork me on Github</em></small>
+      </div>
+    </div>
+
+  </div>
+  <!-- Include the compiled Third Party JS -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
   <!-- Custom Javascript scripts loaded -->
   <script src="js/openfight.js"></script>
