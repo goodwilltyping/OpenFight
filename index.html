@@ -24,7 +24,6 @@
     <!-- Include any Custom CSS -->
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link rel="stylesheet" href="css/forkongithub.css?v=1.0">
-
   </head>
   <body onload="OF_APP.game.load();" class="page ui-mobile-viewport ui-overlay-a">
     <!-- FORK ON GITHUB -->
@@ -32,44 +31,36 @@
       <a href="https://github.com/goodwilltyping/OpenFight" target="_blank">Fork me on GitHub</a>
     </span>-->
 
-    <!-- HEADER -->
-    <div class="container">
-      <!--<div class="row page-header">
-        <div class="col-sm-12 header well-lg">
-          <h1 onclick="document.location.reload()">OpenFight</h1>
-        </div>
-        <div class="col-sm-12 subtitle well-sm">
-          <h1><small>The real world game where you use your words to fight to the death</small></h1>
-        </div>
-      </div>-->
 
-      <!-- NAVIGATION -->
-      <div class="row">
-        <a href="#menupanel" id="menu-btn" class="ui-btn ui-btn-icon-left ui-btn-icon-notext ui-btn-icon-left ui-icon-bars"></a>
-        <div data-role="panel" id="menupanel" data-position="left" data-position-fixed="true" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
-          <div class="ui-panel-inner">
-            <h3>Left Panel: Overlay</h3>
-            <p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
-            <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
-            <a href="#menupanel" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a>
-          </div>
-        </div>
-
-      <!--
+    <!-- NAVIGATION -->
+    <a href="#menupanel" id="menu-btn" class="ui-btn ui-btn-icon-notext ui-btn-icon-left ui-icon-bars"></a>
+    <div data-role="panel" id="menupanel" data-position="left" data-display="overlay" data-theme="a" data-position-fixed="true" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+      <div class="ui-panel-inner">
         <div class="cole-sm-12 menu" role="navigation">
-          <ul class="nav nav-tabs">
-            <li role="presentation" class="dropdown active">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Game <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="javascript:void(0)" onclick="OF_APP.game.shuffle()">New Game</a></li>
-                  <li><a href="javascript:void(0)" onclick="OF_APP.game.new()">New Round</a></li>
-                </ul>
-              </li>
+          <ul class="nav navbar-nav">
+            <li>&nbsp;</li>
+            <li><a href="javascript:void(0)" onclick="OF_APP.game.shuffle()">New Game</a></li>
+            <li><a href="javascript:void(0)" onclick="OF_APP.game.new()">New Round</a></li>
             <li role="presentation"><a href="help.html">Help</a></li>
             <li role="presentation"><a href="about.html">About</a></li>
           </ul>
-        </div>-->
+        </div>
       </div>
+    </div>
+
+    <div class="container">
+
+
+        <!-- HEADER -->
+        <!--<div class="row page-header">
+          <div class="col-sm-12 header well-lg">
+            <h1 onclick="document.location.reload()">OpenFight</h1>
+          </div>
+          <div class="col-sm-12 subtitle well-sm">
+            <h1><small>The real world game where you use your words to fight to the death</small></h1>
+          </div>
+        </div>-->
+
 
       <!-- GAME -->
       <div class="row players">
@@ -128,10 +119,10 @@
 
     <!-- Include Custom JS -->
     <script id="panel-init">
-      $(document).ready(function() {
-        $( "body>[data-role='panel']" ).panel();
-      });
-    </script>
+		  $(function() {
+			     $("body>[data-role='panel']").panel();
+		       });
+	  </script>
 
     <!-- Custom Javascript scripts loaded -->
     <script src="js/openfight.js?v=1.00"></script>
