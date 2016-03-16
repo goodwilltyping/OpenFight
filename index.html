@@ -65,7 +65,7 @@
       <!-- GAME -->
       <div class="row players">
         <div data-role="page" class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
-          <div class="title">Player 1:</div>
+          <div class="title"><b>Player 1</b> >> Player 2 >> Location</div>
           <div class="well fighter card white">
             <div id="fighter1" class="text" onclick="OF_APP.fighters.get(this);">Select your character</div>
           </div>
@@ -80,7 +80,7 @@
         </div>
 
         <div data-role="page" class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
-          <div class="title">Player 2:</div>
+          <div class="title">Player 1 << <b>Player 2</b> >> Location</div>
           <div class="well fighter card white">
             <div id="fighter2" class="text" onclick="OF_APP.fighters.get(this);">Select your character</div>
           </div>
@@ -95,7 +95,7 @@
         </div>
 
         <div data-role="page" class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
-          <div class="title">[Optional]</div>
+          <div class="title">Player 1 << Player 2 << <b>Location</b></div>
           <div class="well location card green">
             <div id="location1" class="text" onclick="OF_APP.locations.get(this);">Select your location</div>
           </div>
@@ -112,10 +112,20 @@
       </div>-->
 
     </div>
+
     <!-- Include the compiled Third Party JS -->
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Special scripts for Mobile Webview -->
+    <script>
+      $(document).bind('mobileinit',function(){
+          $.mobile.changePage.defaults.changeHash = false;
+          $.mobile.hashListeningEnabled = false;
+          $.mobile.pushStateEnabled = false;
+      });
+    </script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
 
     <!-- Include Custom JS -->
     <script id="panel-init">

@@ -9,7 +9,7 @@
 #menu-btn {
   position: fixed;
   z-index: 1110;
-  top: -5px;
+  top: 3px;
   border: none;
   zoom: 1.2;
 }
@@ -56,9 +56,15 @@
 
 .players .title {
   text-align: center;
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: normal;
   color: #F80;
+  margin-top:20px;
+}
+
+.players .title b {
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 .card {
@@ -67,7 +73,9 @@
   border-radius: 20px;
   padding: 0;
   display:table;
-  width:100%
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .card.white {
