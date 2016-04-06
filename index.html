@@ -19,6 +19,13 @@
         <script src="js/openfight.js"></script>
         <script src="js/nothing.json"></script>
 
+
+
+
+
+
+
+
 </head>
 <body onload="OF_APP.game.load();">
     <div id="container">
@@ -39,6 +46,41 @@
 <div style="clear:both"></div>
 <!-- row1fighters -->
 
+<table border="1px">
+            
+                <tr>
+                    <td> 
+                    <a id="fighter1" class="card" href="javescript:void(0)"onclick="OF_APP.fighters.get(this);">Select your character</a>
+                    </td>
+                    <td>
+                      <a id="fighter2" class="card" href="javescript:void(0)"onclick="OF_APP.fighters.get(this);">Select your character</a>
+                    </td>
+                     <td>
+                        <a id="location1" class="card" href="javescript:void(0)"onclick="OF_APP.locations.get(this);">Where are you?</a>
+                     </td>          
+                </tr>
+                
+                <tr>
+                    <td>
+                  <a id="power1" class="card" href="javescript:void(0)"onclick="OF_APP.powers.get(this);">Select your Superpower</a>
+                    </td>
+                    <td>
+                      <a id="power2" class="card" href="javescript:void(0)"onclick="OF_APP.powers.get(this);">Select your Superpower</a>
+                      </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                    <a id="weapon1" class="card" href="javescript:void(0)"onclick="OF_APP.weapons.get(this);">Select your weapon</a></td>
+                    <td>
+                    <a id="weapon2" class="card" href="javescript:void(0)"onclick="OF_APP.weapons.get(this);">Select your Weapon</a>
+                    </td>
+                </tr>
+            
+        </table>
+
+
+<!--
      <div id="row1" class="row">
           <div id="col1" class="column">
             <h2>Ready Player 1</h2>
@@ -63,12 +105,12 @@
         <!-- <div id="col4" class="column">
             <h2>this button does nothing!</h2>
             <a href="javescript:void(0)"onclick="OFAPP.nothing.get(this);">!!!</a>
-        </div> -->
-    </div>
+        </div> 
+    </div> -->
 
     <!-- Include Modernizr script to assist with browser compatibility -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-
+-->
 </body>
 </html>
