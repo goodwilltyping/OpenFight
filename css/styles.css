@@ -29,6 +29,16 @@ margin: auto;}
     padding: 0px 20px;
 }
 
+table {
+  display:block;
+  text-align: center;
+  color: black;
+  width: 200px;
+  margin: 10px auto;
+  padding:20px;
+  
+}
+}
 
 
 div {
@@ -45,11 +55,11 @@ a.card:visited{
   margin: 10px auto;
   padding:20px;
   border: 1px dashed black;
-  background-color:lightgray;
+  background-color: lightgreen;
 }
 
 a.card:hover{
-  color:darkgreen;
+  color:blue;
   border-color:crimson;
   background-color: forestgreen;
 }
